@@ -9,7 +9,6 @@ public class Util {
         System.out.print(s);
     }
 
-
     public static void println() {
         System.out.println();
     }
