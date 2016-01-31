@@ -27,6 +27,17 @@ public class Util {
         println(s);
     }
 
+    public static <T> int indexOf(T[] array, T value) {
+        int ret = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(value)) {
+                ret = i;
+                break;
+            }
+        }
+        return ret;
+    }
+
     public static int[] generateArrayValues(int[] array, int maxValue) {
         Random random = new Random();
         for (int i = 0; i < array.length; i++)
