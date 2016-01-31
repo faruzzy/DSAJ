@@ -34,7 +34,7 @@ public class Util {
      * Print content of an array to the terminal
      * @param array the array which content is to be printed
      */
-    public static <T> void printArray(T[] array) {
+    public static void printArray(int[] array) {
         String s = "[ ";
         for (int i = 0; i < array.length; i++) {
             s += array[i] + " ";
