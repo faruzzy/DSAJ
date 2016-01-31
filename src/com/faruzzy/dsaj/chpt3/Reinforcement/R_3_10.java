@@ -5,6 +5,9 @@ import java.util.Random;
 
 /**
  * Created by faruzzy on 1/29/16.
+ * R-3.10
+ * Describe a recursive algorithm for finding the maximum element in an array A of n elements.
+ * What is your running time and space usage?
  */
 public class R_3_10 {
     public static int findMaximum(int[] array, int i, int max) {

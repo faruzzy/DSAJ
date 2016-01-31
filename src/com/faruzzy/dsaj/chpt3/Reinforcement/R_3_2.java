@@ -4,6 +4,8 @@ import java.util.Random;
 
 /**
  * Created by faruzzy on 1/28/16.
+ * R-3.2
+ * Describe a way to use recursion to add all the elements in a n × n (two dimensional) array of integers.
  */
 public class R_3_2 {
     private static int[][] array;

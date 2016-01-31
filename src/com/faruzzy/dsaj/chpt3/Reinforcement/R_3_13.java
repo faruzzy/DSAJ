@@ -4,6 +4,9 @@ import java.util.Random;
 
 /**
  * Created by faruzzy on 1/30/16.
+ * R-3.13
+ * Write a short Java method that repeatedly selects and
+ * removes a random entry from an array until the array holds no more entries.
  */
 public class R_3_13 {
 
