@@ -1,4 +1,5 @@
 package com.faruzzy.dsaj.utils;
+import java.util.Random;
 
 /**
  * Created by faruzzy on 1/28/16.
@@ -24,6 +25,13 @@ public class Util {
         }
         s += "]";
         println(s);
+    }
+
+    public static int[] generateArrayValues(int[] array, int maxValue) {
+        Random random = new Random();
+        for (int i = 0; i < array.length; i++)
+            array[i] = random.nextInt(maxValue);
+        return array;
     }
 
     public static void printMultiDimensionalArray(int array[][]) {
