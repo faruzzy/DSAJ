@@ -65,7 +65,7 @@ public class Util {
      * Randomly generate values for each index of an array
      * @param array The Array to generate the values for
      * @param maxValue The max randomized values
-     * @return
+     * @return The Array filled with randomized values
      */
     public static int[] generateArrayValues(int[] array, int maxValue) {
         Random random = new Random();
@@ -77,9 +77,8 @@ public class Util {
     /**
      * Print the content of a multiple dimensional array
      * @param array The Array which content we want to display
-     * @param <T> The type of the Array
      */
-    public static <T> void printMultiDimensionalArray(T array[][]) {
+    public static void printMultiDimensionalArray(int array[][]) {
         int len = array.length;
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; j++)
