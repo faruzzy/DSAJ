@@ -8,20 +8,18 @@ import com.faruzzy.dsaj.utils.Util;
  * For example, "13531" represents the integer 13,531.
  */
 public class C_3_12 {
-    public static int convertStringToInt(String value, int start, int length, int sum) {
-        int s = 0;
+    public static int convertStringToInt(String value, int i, int length) {
         int k = 1;
-        while (s++ < length - 1) {
+        int s = 0;
+        while (s++ < length - 1)
             k *= 10;
-        }
         if (length == 1)
-            return sum + value.charAt(start);
-        sum += Character.getNumericValue(value.charAt(start)) * k;
-        return convertStringToInt(value, ++start, --length, sum);
+            return Character.getNumericValue(value.charAt(value.length() -1));
+        return (Character.getNumericValue(value.charAt(i)) * k) + convertStringToInt(value, ++i, --length);
     }
 
     public static void main(String[] args) {
         String v = "13531";
-        Util.print(convertStringToInt(v, 0, v.length(), 0) + "");
+        Util.print(convertStringToInt(v, 0, v.length()) + "");
     }
 }

@@ -8,14 +8,13 @@ import com.faruzzy.dsaj.utils.Util;
  * string s and outputs its reverse. So for example, the reverse of "pots&pans" would be "snap&stop".
  */
 public class C_3_18 {
-    public static String reverseString(String s, int i, String newString) {
-        if (i < 0) return newString;
-        newString += s.charAt(i);
-        return reverseString(s, --i, newString);
+    public static String reverseString(String s, int i) {
+        if (i < 0) return s.charAt(s.length() - 1) + "";
+        return s.charAt(i) + reverseString(s, --i);
     }
 
     public static void main(String[] args) {
         String s = "pots&pans";
-        Util.println(reverseString(s, s.length() - 1, ""));
+        Util.println(reverseString(s, s.length() - 1));
     }
 }

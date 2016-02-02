@@ -9,8 +9,8 @@ import com.faruzzy.dsaj.utils.Util;
  * maximum values in an array of int values without using any loops.
  */
 public class C_3_15 {
-    public static int[] findMinAndMax(int[] array, int currentIndex, int end, int min, int max) {
-        if (currentIndex == end) {
+    public static int[] findMinAndMax(int[] array, int currentIndex, int min, int max) {
+        if (currentIndex == array.length) {
             int[] arr = {min, max};
             return arr;
         }
@@ -18,11 +18,11 @@ public class C_3_15 {
             min = array[currentIndex];
         if (array[currentIndex] > max)
             max = array[currentIndex];
-        return findMinAndMax(array, ++currentIndex, end, min, max);
+        return findMinAndMax(array, ++currentIndex, min, max);
     }
 
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        Util.printArray( findMinAndMax(array, 0, array.length, array[0], array[0]) );
+        Util.printArray( findMinAndMax(array, 0, array[0], array[0]) );
     }
 }

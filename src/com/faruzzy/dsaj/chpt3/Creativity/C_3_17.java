@@ -9,7 +9,6 @@ import com.faruzzy.dsaj.utils.Util;
  */
 public class C_3_17 {
     public static void arrangeEvenBeforeOdd(int[] array, int start, int end) {
-        // local  end
         boolean allOdds = false;
         int e = end - 1;
         if (start < end) {
@@ -33,7 +32,7 @@ public class C_3_17 {
     }
 
     public static void main(String[] args) {
-        int[] array = {9, 7, 5, 3, 2, 4, 6, 8, 10};
+        int[] array = { 9, 7, 5, 3, 2, 4, 6, 8, 10 };
         arrangeEvenBeforeOdd(array, 0, array.length);
         Util.printArray(array);
     }
