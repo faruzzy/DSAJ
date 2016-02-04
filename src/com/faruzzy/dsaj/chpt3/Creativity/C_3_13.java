@@ -10,14 +10,14 @@ import com.faruzzy.dsaj.chpt3.SLinkedList;
  */
 public class C_3_13 {
 
-    public static int count(SLinkedList list, Node current, int count) {
+    public static int count(SLinkedList<String> list, Node<String> current, int count) {
         if (current == null) return count;
         current = current.getNext();
         return count(list, current, ++count);
     }
 
     public static void main(String[] args) {
-        SLinkedList list = new SLinkedList();
+        SLinkedList<String> list = new SLinkedList<String>();
         list.insertAtFront("Rajesh");
         list.insertAtBack("Sheldon");
         list.insertAtBack("Cooper");

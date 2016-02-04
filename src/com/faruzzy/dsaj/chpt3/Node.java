@@ -3,25 +3,30 @@ package com.faruzzy.dsaj.chpt3;
 /**
  * Created by faruzzy on 1/23/16.
  */
-public class Node {
-    private String element;
-    private Node next;
+public class Node<T> {
+    private T value;
+    private Node<T> next;
 
-    public Node(String s, Node n) {
-        element = s;
+    public Node(T v, Node<T> n) {
+        value = v;
         next = n;
     }
 
-    public Node(String s) {
-        element = s;
+    public Node(T v) {
+        value = v;
         next = null;
     }
 
-    public String getElement() { return element; }
+    public T getValue() { return value; }
 
-    public void setElement(String s) { element = s; }
+    public void setValue(T v) { value = v; }
 
-    public Node getNext() { return next; }
+    public Node<T> getNext() { return next; }
 
-    public void setNext(Node newNext) { next = newNext; }
+    public void setNext(Node n) { next = n; }
+
+    @Override
+    public String toString() {
+        return value.toString();
+    }
 }

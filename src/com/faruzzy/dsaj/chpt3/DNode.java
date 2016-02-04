@@ -1,14 +1,16 @@
 package com.faruzzy.dsaj.chpt3;
 
+import java.util.Comparator;
+
 /**
  * Created by faruzzy on 1/23/16.
  */
-public class DNode<T extends Comparable> {
-    private T element;
+public class DNode<T> {
+    private T value;
     private DNode<T> prev, next;
 
-    public DNode(T e, DNode p, DNode n) {
-        element = e;
+    public DNode(T e, DNode<T> p, DNode<T> n) {
+        value = e;
         prev = p;
         next = n;
     }
@@ -17,15 +19,15 @@ public class DNode<T extends Comparable> {
         this(e, null, null);
     }
 
-    public T getElement() { return element; }
+    public T getValue() { return value; }
 
-    public void setElement(T elem) { element = elem; }
+    public void setValue(T elem) { value = elem; }
 
-    public DNode getNext() { return next;}
+    public DNode<T> getNext() { return next; }
 
-    public void setNext(DNode n) { next = n; }
+    public void setNext(DNode<T> n) { next = n; }
 
-    public void setPrev(DNode p) { prev = p; }
+    public void setPrev(DNode<T> p) { prev = p; }
 
-    public DNode getPrev() { return prev; }
+    public DNode<T> getPrev() { return prev; }
 }

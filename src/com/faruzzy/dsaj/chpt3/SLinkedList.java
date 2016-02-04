@@ -1,11 +1,12 @@
 package com.faruzzy.dsaj.chpt3;
+import com.faruzzy.dsaj.utils.Util;
 
 /**
  * Created by faruzzy on 1/23/16.
  */
-public class SLinkedList {
-    public Node head;
-    public Node tail;
+public class SLinkedList<T> {
+    public Node<T> head;
+    public Node<T> tail;
     private int size;
 
     public SLinkedList() {
@@ -13,8 +14,8 @@ public class SLinkedList {
         size = 0;
     }
 
-    public void insertAtFront(final String s) {
-        Node n = new Node(s);
+    public void insertAtFront(final T s) {
+        Node<T> n = new Node<T>(s);
         if (isEmpty()) {
             head = tail = n;
         } else {
@@ -27,11 +28,11 @@ public class SLinkedList {
 
     public void removeAtFront() {
         if (isEmpty()) {
-            System.out.println("LinkedList is empty");
+            Util.println("LinkedList is empty");
         } else if (head == tail) {
             head = tail = null;
         } else {
-            Node temp = head;
+            Node<T> temp = head;
             head = head.getNext();
             temp.setNext(null);
         }
@@ -70,7 +71,6 @@ public class SLinkedList {
     public void removeFromBack() {
         if (isEmpty()) {
             System.out.println("LinkedList is empty");
-            return;
         } else if (head == tail) {
             head = tail = null;
         } else {
@@ -82,8 +82,8 @@ public class SLinkedList {
         }
     }
 
-    public void insertAtBack(final String s) {
-        Node n = new Node(s);
+    public void insertAtBack(final T v) {
+        Node<T> n = new Node<T>(v);
         if (isEmpty()) {
             head = tail = n;
         } else {
@@ -100,7 +100,7 @@ public class SLinkedList {
         String s = "[ ";
         Node current = head;
         while (current != null) {
-            s += current.getElement() + " ";
+            s += current.getValue() + " ";
             current = current.getNext();
         }
         s += "]";
@@ -110,7 +110,7 @@ public class SLinkedList {
     private boolean isEmpty() { return size == 0; }
 
     public static void main(String[] args) {
-        SLinkedList list = new SLinkedList();
+        SLinkedList<String> list = new SLinkedList<String>();
         list.insertAtFront("2");
         list.removeAtFront();
         System.out.println(list.toString());
