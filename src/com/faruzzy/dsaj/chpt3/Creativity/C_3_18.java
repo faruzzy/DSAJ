@@ -13,8 +13,14 @@ public class C_3_18 {
         return s.charAt(i) + reverseString(s, --i);
     }
 
+    public static String reverse(String s) {
+        if (s.length() == 1) return s;
+        return s.charAt(s.length() - 1) + reverse(s.substring(0, s.length() - 1));
+    }
+
     public static void main(String[] args) {
         String s = "pots&pans";
         Util.println(reverseString(s, s.length() - 1));
+        Util.println(reverse(s));
     }
 }
