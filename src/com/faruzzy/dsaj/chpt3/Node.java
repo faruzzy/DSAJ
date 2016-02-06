@@ -7,12 +7,12 @@ public class Node<T> {
     private T value;
     private Node<T> next;
 
-    public Node(T v, Node<T> n) {
+    public Node(final T v, final Node<T> n) {
         value = v;
         next = n;
     }
 
-    public Node(T v) {
+    public Node(final T v) {
         value = v;
         next = null;
     }
