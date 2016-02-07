@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 import com.faruzzy.dsaj.chpt3.Node;
 import com.faruzzy.dsaj.chpt3.SLinkedList;
 
@@ -22,6 +22,6 @@ public class C_3_13 {
         list.insertAtBack("Sheldon");
         list.insertAtBack("Cooper");
         list.insertAtFront("Jeremy");
-        Util.print(count(list, list.head, 0) + "");
+        u.print(count(list, list.head, 0) + "");
     }
 }

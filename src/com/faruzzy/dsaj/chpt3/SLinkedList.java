@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 /**
  * Created by faruzzy on 1/23/16.
@@ -28,7 +28,7 @@ public class SLinkedList<T> {
 
     public void removeAtFront() {
         if (isEmpty()) {
-            Util.println("LinkedList is empty");
+            u.println("LinkedList is empty");
         } else if (head == tail) {
             head = tail = null;
         } else {

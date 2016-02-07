@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 /**
  * Created by faruzzy on 2/1/16.
@@ -34,6 +34,6 @@ public class C_3_17 {
     public static void main(String[] args) {
         int[] array = { 9, 7, 5, 3, 2, 4, 6, 8, 10 };
         arrangeEvenBeforeOdd(array, 0, array.length);
-        Util.printArray(array);
+        u.printArray(array);
     }
 }

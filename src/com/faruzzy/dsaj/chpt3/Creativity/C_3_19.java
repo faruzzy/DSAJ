@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 /**
  * Created by faruzzy on 1/30/16.
  * C-3.19:
@@ -24,9 +24,9 @@ public class C_3_19 {
         //String str = "racecar";
         //String str = "roland";
         if(isPalindrome(str, 0, str.length() - 1, false)) {
-            Util.println("Is Palindrome");
+            u.println("Is Palindrome");
         } else {
-            Util.println("Is not a Palindrome");
+            u.println("Is not a Palindrome");
         }
     }
 }

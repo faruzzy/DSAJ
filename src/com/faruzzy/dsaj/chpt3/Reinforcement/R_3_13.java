@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3.Reinforcement;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 import java.util.Random;
 
 /**
@@ -27,9 +27,9 @@ public class R_3_13 {
 
     public static void main(String[] args) {
         int[] array = new int[20];
-        array = Util.generateArrayValues(array, 40);
-        Util.printArray(array);
+        array = u.generateArrayValues(array, 40);
+        u.printArray(array);
         clearArray(array);
-        Util.printArray(array);
+        u.printArray(array);
     }
 }

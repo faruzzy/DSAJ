@@ -2,7 +2,7 @@ package com.faruzzy.dsaj.chpt3.Reinforcement;
 
 import com.faruzzy.dsaj.chpt3.DLinkedList;
 import com.faruzzy.dsaj.chpt3.DNode;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 /**
  * Created by faruzzy on 1/30/16.
@@ -27,6 +27,6 @@ public class R_3_14 {
         list.addFirst("Junior");
         list.addFirst("Rachel");
         list.addLast("Amundala");
-        Util.println("Count: " + count(list));
+        u.println("Count: " + count(list));
     }
 }

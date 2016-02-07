@@ -1,5 +1,5 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 /**
  * Created by faruzzy on 2/1/16.
@@ -23,6 +23,6 @@ public class C_3_15 {
 
     public static void main(String[] args) {
         int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        Util.printArray( findMinAndMax(array, 0, array[0], array[0]) );
+        u.printArray( findMinAndMax(array, 0, array[0], array[0]) );
     }
 }
