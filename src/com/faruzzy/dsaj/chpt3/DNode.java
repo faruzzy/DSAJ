@@ -1,7 +1,5 @@
 package com.faruzzy.dsaj.chpt3;
 
-import java.util.Comparator;
-
 /**
  * Created by faruzzy on 1/23/16.
  */
