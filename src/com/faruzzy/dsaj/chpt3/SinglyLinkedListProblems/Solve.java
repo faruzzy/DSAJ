@@ -96,7 +96,6 @@ public class Solve {
         }
     }
 
-    /*
     public static <T extends Comparable> void insertSort(SLinkedList<T> list) {
         Node<T> current = list.getFirst();
         while (current != null) {
@@ -107,7 +106,7 @@ public class Solve {
             current = current.getNext();
             oldCurrent.setNext(null);
         }
-    }*/
+    }
 
     public static void main(String[] args) {
         SLinkedList<String> list = new SLinkedList<String>();

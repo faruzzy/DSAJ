@@ -2,7 +2,6 @@ package com.faruzzy.dsaj.chpt3.Creativity;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 2/1/16.
  * C-3.12
  * Describe a recursive method for converting a string of digits into the integer it represents.
  * For example, "13531" represents the integer 13,531.

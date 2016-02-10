@@ -5,7 +5,6 @@ import com.faruzzy.dsaj.chpt3.DNode;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 1/30/16.
  * R-3.14
  * Write a short Java method to count the number of nodes in a circularly linked list.
  */

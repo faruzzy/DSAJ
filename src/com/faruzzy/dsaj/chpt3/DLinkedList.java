@@ -1,8 +1,5 @@
 package com.faruzzy.dsaj.chpt3;
 
-/**
- * Created by faruzzy on 1/25/16.
- */
 public class DLinkedList<T extends Comparable> {
     private int size;
     public DNode<T> header;

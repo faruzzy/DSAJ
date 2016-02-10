@@ -2,7 +2,6 @@ package com.faruzzy.dsaj.chpt3.Creativity;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 1/31/16.
  * C-3.16
  * Describe a recursive algorithm that will check if an array A of integers contains
  * an integer A[i] that is the sum of two integers that appear earlier in A,

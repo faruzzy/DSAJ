@@ -4,7 +4,6 @@ import com.faruzzy.dsaj.chpt3.Node;
 import com.faruzzy.dsaj.chpt3.SLinkedList;
 
 /**
- * Created by faruzzy on 2/1/16.
  * C-3.13
  * Describe a recursive algorithm that counts the number of nodes in a singly linked list.
  */

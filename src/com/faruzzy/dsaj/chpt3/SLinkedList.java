@@ -1,9 +1,6 @@
 package com.faruzzy.dsaj.chpt3;
 import com.faruzzy.dsaj.utils.u;
 
-/**
- * Created by faruzzy on 1/23/16.
- */
 public class SLinkedList<T extends Comparable> {
     private Node<T> head;
     private Node<T> tail;

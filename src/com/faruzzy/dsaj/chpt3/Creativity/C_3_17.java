@@ -2,7 +2,6 @@ package com.faruzzy.dsaj.chpt3.Creativity;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 2/1/16.
  * C-3.17
  * Write a short recursive Java method that will rearrange an array
  * of int values so that all the even values appear before all the odd values.

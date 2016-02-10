@@ -2,8 +2,6 @@ package com.faruzzy.dsaj.chpt3.Creativity;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 2/1/16.
- *
  * C-3.15
  * Write a short recursive Java method that finds the minimum and
  * maximum values in an array of int values without using any loops.

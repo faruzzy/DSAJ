@@ -2,7 +2,6 @@ package com.faruzzy.dsaj.chpt3.Creativity;
 import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 1/31/16.
  * C-3.20
  * Use recursion to write a Java method for determining if a string s has more vowels than consonants.
  */

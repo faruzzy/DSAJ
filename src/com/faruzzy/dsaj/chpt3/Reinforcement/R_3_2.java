@@ -3,7 +3,6 @@ import com.faruzzy.dsaj.utils.u;
 import java.util.Random;
 
 /**
- * Created by faruzzy on 1/28/16.
  * R-3.2
  * Describe a way to use recursion to add all the elements in a n × n (two dimensional) array of integers.
  */
