@@ -18,10 +18,10 @@ public class C_3_13 {
 
     public static void main(String[] args) {
         SLinkedList<String> list = new SLinkedList<String>();
-        list.insertAtFront("Rajesh");
-        list.insertAtBack("Sheldon");
-        list.insertAtBack("Cooper");
-        list.insertAtFront("Jeremy");
-        u.print(count(list, list.head, 0) + "");
+        list.addFirst("Rajesh");
+        list.addLast("Sheldon");
+        list.addLast("Cooper");
+        list.addFirst("Jeremy");
+        u.print(count(list, list.getFirst(), 0) + "");
     }
 }

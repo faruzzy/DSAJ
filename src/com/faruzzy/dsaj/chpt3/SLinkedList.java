@@ -4,17 +4,29 @@ import com.faruzzy.dsaj.utils.u;
 /**
  * Created by faruzzy on 1/23/16.
  */
-public class SLinkedList<T> {
-    public Node<T> head;
-    public Node<T> tail;
-    private int size;
+public class SLinkedList<T extends Comparable> {
+    private Node<T> head;
+    private Node<T> tail;
+    public int length;
 
     public SLinkedList() {
         head = tail = null;
-        size = 0;
+        length = 0;
     }
 
-    public void insertAtFront(final T s) {
+    public Node<T> getFirst() {
+        if (isEmpty())
+            throw new IllegalStateException("List is Empty");
+        return head;
+    }
+
+    public Node<T> getLast() {
+        if (isEmpty())
+            throw new IllegalStateException("List is Empty");
+        return tail;
+    }
+
+    public void addFirst(final T s) {
         Node<T> n = new Node<T>(s);
         if (isEmpty()) {
             head = tail = n;
@@ -22,11 +34,11 @@ public class SLinkedList<T> {
             n.setNext(head);
             head = n;
         }
-        size++;
+        length++;
     }
 
 
-    public void removeAtFront() {
+    public void removeFirst() {
         if (isEmpty()) {
             u.println("LinkedList is empty");
         } else if (head == tail) {
@@ -36,7 +48,7 @@ public class SLinkedList<T> {
             head = head.getNext();
             temp.setNext(null);
         }
-        size--;
+        length--;
     }
 
     public void removeAt(int index) {
@@ -46,7 +58,7 @@ public class SLinkedList<T> {
             } else if (isEmpty()) {
                 System.out.println("LinkedList is empty");
             } else {
-                removeAtFront();
+                removeFirst();
             }
         } else {
             int c = 0;
@@ -60,12 +72,12 @@ public class SLinkedList<T> {
                 current.setNext(third);
             }
         }
-        size--;
+        length--;
     }
 
     public void clear() {
         head = tail = null;
-        size = 0;
+        length = 0;
     }
 
     public void removeFromBack() {
@@ -78,11 +90,11 @@ public class SLinkedList<T> {
             while (current.getNext() != tail)
                current = current.getNext();
             current.setNext(null);
-            size--;
+            length--;
         }
     }
 
-    public void insertAtBack(final T v) {
+    public void addLast(final T v) {
         Node<T> n = new Node<T>(v);
         if (isEmpty()) {
             head = tail = n;
@@ -90,10 +102,10 @@ public class SLinkedList<T> {
             tail.setNext(n);
             tail = n;
         }
-        size++;
+        length++;
     }
 
-    public int getSize() { return size; }
+    public int getLength() { return length; }
 
     @Override
     public String toString() {
@@ -107,41 +119,39 @@ public class SLinkedList<T> {
         return s;
     }
 
-    private boolean isEmpty() { return size == 0; }
+    public boolean isEmpty() { return (length == 0); }
 
     public static void main(String[] args) {
         SLinkedList<String> list = new SLinkedList<String>();
-        list.insertAtFront("2");
-        list.removeAtFront();
+        list.addFirst("2");
+        list.removeFirst();
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
+        System.out.println("Length: " + list.getLength());
 
-        list.insertAtFront("3");
-        list.insertAtFront("4");
-        list.insertAtFront("5");
+        list.addFirst("3");
+        list.addFirst("4");
+        list.addFirst("5");
 
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
+        System.out.println("Length: " + list.getLength());
 
-        list.insertAtBack("10");
-        list.insertAtBack("12");
+        list.addLast("10");
+        list.addLast("12");
         list.removeAt(2);
 
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
+        System.out.println("Length: " + list.getLength());
 
-        list.removeAtFront();
+        list.removeFirst();
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
+        System.out.println("Length: " + list.getLength());
 
         list.removeFromBack();
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
+        System.out.println("Length: " + list.getLength());
 
         list.clear();
         System.out.println(list.toString());
-        System.out.println("Size: " + list.getSize());
-
-
+        System.out.println("Length: " + list.getLength());
     }
 }
