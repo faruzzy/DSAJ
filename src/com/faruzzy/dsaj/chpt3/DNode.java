@@ -1,8 +1,5 @@
 package com.faruzzy.dsaj.chpt3;
 
-/**
- * Created by faruzzy on 1/23/16.
- */
 public class DNode<T> {
     private T value;
     private DNode<T> prev, next;

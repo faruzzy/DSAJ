@@ -1,8 +1,7 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 /**
- * Created by faruzzy on 1/31/16.
  * C-3.16
  * Describe a recursive algorithm that will check if an array A of integers contains
  * an integer A[i] that is the sum of two integers that appear earlier in A,
@@ -28,9 +27,9 @@ public class C_3_16 {
         int[] array = { 2, 4, 8, 11, 9, 1, 0 }; // should be false
         boolean result = checkItemForSum(array, 0, array.length, false);
         if (result) {
-            Util.println("True");
+            u.println("True");
         } else {
-            Util.println("False");
+            u.println("False");
 
         }
     }

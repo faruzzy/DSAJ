@@ -1,10 +1,9 @@
 package com.faruzzy.dsaj.chpt3.Reinforcement;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 
 import java.util.Random;
 
 /**
- * Created by faruzzy on 1/29/16.
  * R-3.10
  * Describe a recursive algorithm for finding the maximum element in an array A of n elements.
  * What is your running time and space usage?
@@ -26,7 +25,7 @@ public class R_3_10 {
         int[] array = new int[10];
         for (int i = 0; i < 10; i++)
             array[i] = random.nextInt(20);
-        Util.printArray(array);
-        Util.println(findMaximum(array, 0, 0) + "");
+        u.printArray(array);
+        u.println(findMaximum(array, 0, 0) + "");
     }
 }

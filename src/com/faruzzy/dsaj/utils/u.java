@@ -2,10 +2,9 @@ package com.faruzzy.dsaj.utils;
 import java.util.Random;
 
 /**
- * Created by faruzzy on 1/28/16.
  * Utility Class created with the purpose of holding, functions that are mostly needed.
  */
-public class Util {
+public class u {
 
     /**
      * Method wrapper of System.out.print

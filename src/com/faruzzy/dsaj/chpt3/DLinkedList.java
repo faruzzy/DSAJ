@@ -1,10 +1,5 @@
 package com.faruzzy.dsaj.chpt3;
 
-import java.util.Comparator;
-
-/**
- * Created by faruzzy on 1/25/16.
- */
 public class DLinkedList<T extends Comparable> {
     private int size;
     public DNode<T> header;

@@ -1,9 +1,8 @@
 package com.faruzzy.dsaj.chpt3.Reinforcement;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 import java.util.Random;
 
 /**
- * Created by faruzzy on 1/28/16.
  * R-3.2
  * Describe a way to use recursion to add all the elements in a n × n (two dimensional) array of integers.
  */
@@ -15,7 +14,7 @@ public class R_3_2 {
         array = new int[6][6];
         random = new Random();
         generateValues();
-        Util.printMultiDimensionalArray(array);
+        u.printMultiDimensionalArray(array);
     }
 
     public int addAllArrayElements(int[][] array) {
@@ -47,6 +46,6 @@ public class R_3_2 {
         //testing binarySum
         //int[] arr =  { 1, 2, 3, 4, 5, 6, 7 };
         //System.out.println(binarySum(arr, 0, arr.length - 1));
-        Util.println("Total: " + obj.addAllArrayElements(array));
+        u.println("Total: " + obj.addAllArrayElements(array));
     }
 }

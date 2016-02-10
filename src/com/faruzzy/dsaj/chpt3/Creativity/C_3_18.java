@@ -1,8 +1,6 @@
 package com.faruzzy.dsaj.chpt3.Creativity;
-import com.faruzzy.dsaj.utils.Util;
+import com.faruzzy.dsaj.utils.u;
 /**
- * Created by faruzzy on 1/30/16.
- *
  * C-3.18:
  * Write a short recursive Java method that takes a character
  * string s and outputs its reverse. So for example, the reverse of "pots&pans" would be "snap&stop".
@@ -20,7 +18,7 @@ public class C_3_18 {
 
     public static void main(String[] args) {
         String s = "pots&pans";
-        Util.println(reverseString(s, s.length() - 1));
-        Util.println(reverse(s));
+        u.println(reverseString(s, s.length() - 1));
+        u.println(reverse(s));
     }
 }
