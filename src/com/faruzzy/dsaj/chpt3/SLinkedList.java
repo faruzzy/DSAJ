@@ -17,6 +17,14 @@ public class SLinkedList<T extends Comparable> {
         return head;
     }
 
+    public void setFirst(Node<T> node) {
+        head = node;
+    }
+
+    public void setLast(Node<T> node) {
+        tail = node;
+    }
+
     public Node<T> getLast() {
         if (isEmpty())
             throw new IllegalStateException("List is Empty");
