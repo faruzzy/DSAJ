@@ -78,6 +78,20 @@ public class Recursion {
         return res;
     }
 
+    //https://www.reddit.com/r/AskProgramming/comments/4693s2/need_help_with_a_recursive_problem/
+    public static int jumpIt(int array[], int i) {
+        if (i < array.length - 1) {
+            if (array[i + 1] < array[i + 2]) {
+                i += 1;
+            } else {
+                i += 2;
+            }
+            return array[i] + jumpIt(array, i);
+        } else {
+            return array[i];
+        }
+    }
+
     private static void printArray(int[] array) {
         String s = "[ ";
         for (int elem : array)
@@ -102,7 +116,8 @@ public class Recursion {
         iterativeReverseArray(array);
         printArray(array);
 
-        u.print(power(2, 4) + "");
+        u.println(power(2, 4) + "");
+        u.println("Jump it: " + jumpIt(new int[] {0, 3, 80, 6, 57, 10}, 0));
     }
 
 }
