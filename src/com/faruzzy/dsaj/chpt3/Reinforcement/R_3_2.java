@@ -7,24 +7,24 @@ import java.util.Random;
  * Describe a way to use recursion to add all the elements in a n × n (two dimensional) array of integers.
  */
 public class R_3_2 {
-    private static int[][] array;
+    private static Integer[][] array;
     private Random random;
 
     public R_3_2() {
-        array = new int[6][6];
+        array = new Integer[6][6];
         random = new Random();
         generateValues();
         u.printMultiDimensionalArray(array);
     }
 
-    public int addAllArrayElements(int[][] array) {
+    private int addAllArrayElements(Integer[][] array) {
         int sum = 0;
         for (int i = 0; i < array.length; i++)
             sum += binarySum(array[i], 0, array.length - 1);
         return sum;
     }
 
-    private static int binarySum(int[] array, int low, int high) {
+    private static int binarySum(Integer[] array, int low, int high) {
         if (low > high) return 0;
         if (low == high) return array[low];
         int mid = (low + high) / 2;
