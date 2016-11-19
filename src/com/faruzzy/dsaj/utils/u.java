@@ -77,7 +77,7 @@ public class u {
      * Print the content of a multiple dimensional array
      * @param array The Array which content we want to display
      */
-    public static void printMultiDimensionalArray(int array[][]) {
+    public static <T> void printMultiDimensionalArray(T array[][]) {
         int len = array.length;
         for (int i = 0; i < len; i++) {
             for (int j = 0; j < len; j++)
